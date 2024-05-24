@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     color: $white;
     @include flex;
-    opacity: .8;
+    opacity: 100%;
     align-items: flex-end;
 
     * {
@@ -17,7 +17,7 @@
 
         .subtitle {
             font-size: 14px;
-            opacity: .9;
+            opacity: 100%;
         }
     }
 

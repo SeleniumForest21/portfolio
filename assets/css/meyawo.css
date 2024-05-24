@@ -12,6 +12,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 :root {
   --blue: #1e549f;
@@ -162,13 +163,13 @@ sup {
 }
 
 a {
-  color: #695aa6;
+  color: #3e2d85;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #493f75;
+  color: #3b22ac;
   text-decoration: none;
 }
 
@@ -12061,53 +12062,79 @@ pre .code {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../imgs/header.jpg);
-  background-size: cover;
+  background-image: url(../imgs/header1.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* Behind other content */
+  transform: scale(1); /* Adjust the scale to reduce visual effect */
+  transform-origin: center;
+  opacity: 20%;
 }
 
 .header .overlay {
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
-  background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+  background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 50%, rgba(105, 90, 166, 0.5) 100%);
+  /* background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%); */
 }
 
 .header .header-content {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 175px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 550px;
+  max-width: 550px; /* Adjusted size */
+  text-align: left; 
 }
 
 .header .header-content .header-title .up {
-  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
-  font-weight: 500;
+  font-size: calc(1px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-weight: 10;
+  font-family: , Helvetica, sans-serif;
   color: white;
   margin-bottom: 5px;
   position: relative;
   display: block;
+  z-index: 2;
 }
 
 .header .header-content .header-title .down {
-  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(2px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
   margin-bottom: 0;
   position: relative;
   display: block;
+  /* color:#7A4FA0; */
+  /* z-index: 2; */
+
+  
 }
 
 .header .header-content .header-subtitle {
-  font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(10 + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
   letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
-  opacity: .8;
+  opacity: 100%;
   margin-top: -10px;
   margin-bottom: 20px;
+  color:white;
+  z-index: 0;
 }
 
 .header .header-content .btn {
@@ -12115,13 +12142,15 @@ pre .code {
   margin-top: 20px;
   border-radius: 20px;
   padding: 8px 15px;
+  z-index: 0;
+  
 }
 
 .header-title {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: .8;
-  color: #212529;
+  color: #fefefe;
 }
 
 .header-mini {
