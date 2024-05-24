@@ -19,11 +19,13 @@ $(document).ready(function(){
     
     $("#exampleText").typer({
         strings: [
-        "I'm a Creative Designer",
-        "I'm a Web Designer",
-        "I'm a Freelancer",
-        "I'm an Artist",
+            "I'm a Passionate PHP Developer",
+            "I'm a Dedicated Web Developer",
+            "I'm a Laravel Enthusiast",
+            "I'm a Creative Problem Solver",
+            "I'm a Future Full-Stack Developer",
         ],
+        
         typeSpeed: 200,
         backspaceSpeed: 20,
         backspaceDelay: 800,
