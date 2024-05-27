@@ -12109,7 +12109,7 @@ pre .code {
   font-size: calc(1px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 10;
   font-family: , Helvetica, sans-serif;
-  color: white;
+  color: #f48ad0;
   margin-bottom: 5px;
   position: sticky;
   display: block;
@@ -12120,7 +12120,7 @@ pre .code {
   margin-bottom: 0;
   position: relative;
   display: block;
-  color:#f48ad0;
+  /* color:#f48ad0; */
 }
   
 }
@@ -12131,7 +12131,7 @@ pre .code {
   opacity: .8;
   margin-top: -10px;
   margin-bottom: 20px;
-  color:#7A4FA0;
+  color:white;
 }
 
 .header .header-content .btn {
@@ -12196,7 +12196,7 @@ pre .code {
 
 .about-img-holder {
   min-width: 400px;
-  max-width: 400px;
+  max-width: 1000px;
   margin-right: 20px;
 }
 
